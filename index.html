@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* CSS styling */
+    /* CSS styling */
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        padding: 18px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+        background-color: #fff;
+        color: #333;
+    }
+
+    #banner {
+        /* display: flex;
+        flex-direction: column; */
+        /* align-items: center; */
+        height: 500px;
+        background-image: url('/assets/banner.jpg');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        color: #fff;
+        padding: 100px;
+    }
+
+    #banner h1 {
+
+        font-size: 46px;
+        margin-bottom: 18px;
+    }
+
+    #banner p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #FF5733;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    #featured,
+    #updates,
+    #events {
+        padding: 50px;
+    }
+
+    .featured-item,
+    .update-item,
+    .event-item {
+        margin-bottom: 30px;
+        background-color: #fffcfc;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .featured-item img,
+    .event-item img,
+    .update-item img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .featured-item,
+    .event-item,.update-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .titles{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .titles h1 {
+        font-size: 30px;
+    }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#updates">Previous Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner">
+            <h1>Welcome to Our Community !</h1>
+            <p>Join us and be part of something great!</p>
+            <p>"Elevate Experiences, Create Connections: Join Our Event Organizing Community"</p>
+            <a href="#" class="cta-button">Explore Now</a>
+        </section>
+
+        <section id="featured">
+            <div class="titles"><h1> &#x2730;  Featured Content &#x2730;</h1></div>
+            <div class="featured-item">
+                <div>
+                    <img src="./assets/featured1.jpg" alt="Event 1">
+                    <h3>Rooftop Dining</h3>
+                    <p>You can enjoy unlimited food on the top of the Plaza</p>
+                </div>
+                <div>
+                    <img src="./assets/featured2.jpg" alt="Event 2">
+                    <h3>Sunburn Festival</h3>
+                    <p>Sunburn 2023 is set to take place in India at...</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="updates">
+            <div class="titles"><h1>&#x2730; Recent Updates &#x2730;</h1></div>   
+            <div class="update-item">
+                <div>
+                    <img src="/assets/jazz.jpg" alt="Jazz">
+                    <h3>Louis Armstrong Jazz Show</h3>
+                    <p>The captivating jazz show of Louis Armstrong last week</p>
+                </div>
+                <div>
+                    <img src="/assets/concert.jpg" alt="Concert">
+                    <h3>Arijit Singh Concert</h3>
+                    <p>Arijit Singh mesmerized the audience with his soulful voice.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="events">
+            <div class="titles"><h1> &#x2730; Upcoming Events &#x2730;</h1></div>
+            <div class="event-item">
+                <div>
+                    <img src="/assets/DJ.jpg" alt="Featured 1">
+                    <h3>Event 1 : DJ Snake live show</h3>
+                    <p>Date: May 20, 2023</p>
+                    <p>Location: Times Square</p>
+                </div>
+                <div>                  
+                    <img src="/assets/music.jpg" alt="Featured 1">
+                    <h3>Event 2 : Classical Musical Show</h3>
+                    <p>Date: June 1, 2023</p>
+                    <p>Location: Maddison Square Garden</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pranav Shinde Event Community. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
